@@ -1,0 +1,22 @@
+button{
+    padding: 5px;
+    margin:10px 5px;
+    border-radius: 10px;
+    transition: color .6s, background .6s
+}
+
+
+button#red{
+    background-color:red;
+}
+button#yellow{
+    background-color:yellow;
+}
+button#green{
+    background-color:lightgreen;
+}
+
+button:hover{
+    color:white;
+    background-color: black !important;
+}
