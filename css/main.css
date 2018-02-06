@@ -1,10 +1,42 @@
 button{
     padding: 5px;
-    margin:10px 5px;
-    border-radius: 10px;
-    transition: color .6s, background .6s
+    margin:10px 5px 0;
+    border: 0;
+    border-radius: 10px 10px 0 0;
+    transition: color .6s, background .6s;	
+    width: 15%;
+    height: 80px;
+    cursor: pointer;
+	
 }
 
+.challenge{
+	border: 3px solid blue;
+    
+    width: 400px;
+	margin: 10px 25px;
+    text-align:center;
+    position: relative;
+}
+
+.knobs{
+    background-color: #444;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position:absolute;
+    top: 67px;
+    
+}
+#knob1{
+    left: 35%; 
+}
+#knob2{
+    left: 53%; 
+}
+#knob3{
+    left: 72%; 
+}
 
 button#red{
     background-color:red;
@@ -18,5 +50,9 @@ button#green{
 
 button:hover{
     color:white;
-    background-color: black !important;
+    background-color: burlywood !important;
+}
+
+#output{
+	text-align: center;
 }

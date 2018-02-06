@@ -8,22 +8,25 @@
 </head>
 <body>
     <h2>JavaScript Basics Mini Challenges</h2>
-    <p>Open the console to see the answers to most of the challenges.</p>
+    <p>The buttons below apply to the last challenge. Open the console to see the answers to the other challenges.</p>
     
     <!-- <div>
         Enter a name :
         <input type="text" id="nameIn">
-        <button onClick="tellName()">Enter</button>
+        <button onClick="tellName(nameEntered)">Enter</button>
     </div>
      -->
-    <p>These buttons apply to the last challenge:</p>
-
-    <div>
+   
+    <div class="challenge">
         Pick a door and win a prize:<br>
-        <button id="red" onclick="getPrize('red')">Red</button>
-        <button id="yellow" onclick="getPrize('yellow')">Yellow</button>
-        <button id="green" onclick="getPrize('green')">Green</button>
+        <button id="red" onclick="getPrize('red')"></button>
+        <button id="yellow" onclick="getPrize('yellow')"></button>
+        <button id="green" onclick="getPrize('green')"></button>
+        <div class="knobs" id="knob1"></div>
+        <div class="knobs" id="knob2"></div>
+        <div class="knobs" id="knob3"></div>
     </div>
+    
     <div id="output">
 
     </div>

@@ -7,7 +7,7 @@ var sum = pi + e;
 
 console.log("The sum of pi and natural log (e): "+sum);
 
-//outputing two items in sub-arrays of a multidimensional array:
+//outputting two items in sub-arrays of a multidimensional array:
 moons = [
     [],[],[],
     ["Luna"],
@@ -31,22 +31,23 @@ if (checkVar < 100){
 
 //function that takes a name in an arg and tells user the name
 
-//I tried to do this one by DOM munipulation but could not quite get it to work
+//I tried to do this one by DOM manipulation but could not quite get it to work
 /*
 var nameEntered = document.getElementById('nameIn').value;
 function tellName(x){
-    console.log(x);
-    alert("You entered "+x)
+    alert("You entered "+x);
 }
+
+tellName(nameEntered);
 */
 
 var enteredName = "Bob";
 function tellName(name){
-    console.log("Name you entered is "+name);
+    console.log("Name entered was "+name);
 }
 tellName(enteredName);
 
-//The three door challange:
+//The three door challenge:
 
 function getPrize(color){
     var output = document.getElementById("output");
