@@ -1,22 +1,32 @@
-button{
+*{
+    box-sizing: border-box;
+}
+
+form{
+    border: 2px solid green;
+    width: 400px;
+    margin: 10px 25px;
+    padding: 20px;
+}
+
+.doors{
+	border: 3px solid blue;
+    width: 400px;
+	margin: 25px;
+    text-align:center;
+    position: relative;
+}
+
+.doors button{
     padding: 5px;
     margin:10px 5px 0;
     border: 0;
     border-radius: 10px 10px 0 0;
-    transition: color .6s, background .6s;	
+    transition: color .6s, background-color .6s;	
     width: 15%;
     height: 80px;
     cursor: pointer;
 	
-}
-
-.challenge{
-	border: 3px solid blue;
-    
-    width: 400px;
-	margin: 10px 25px;
-    text-align:center;
-    position: relative;
 }
 
 .knobs{
@@ -53,6 +63,3 @@ button:hover{
     background-color: burlywood !important;
 }
 
-#output{
-	text-align: center;
-}

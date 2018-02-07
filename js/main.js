@@ -30,24 +30,27 @@ if (checkVar < 100){
 }
 
 //function that takes a name in an arg and tells user the name
+//re-did this one after learning about event listeners.
+//Also got it to minipulate the DOM instead of log to the console.
 
-//I tried to do this one by DOM manipulation but could not quite get it to work
-/*
-var nameEntered = document.getElementById('nameIn').value;
-function tellName(x){
-    alert("You entered "+x);
-}
+// var enteredName = "Bob";
+// function tellName(name){
+//     console.log("Name entered was "+name);
+// }
+// tellName(enteredName);
 
-tellName(nameEntered);
-*/
+var nameButton = document.getElementById('name-button')
 
-var enteredName = "Bob";
-function tellName(name){
-    console.log("Name entered was "+name);
-}
-tellName(enteredName);
+nameButton.addEventListener('click', function(e){
+    e.preventDefault();
+    nameEntered = document.getElementById("nameIn").value;
+    alert("Hi, "+nameEntered);
+    document.getElementById("drGreet").innerText = ", "+nameEntered+",";
+});
 
 //The three door challenge:
+
+
 
 function getPrize(color){
     var output = document.getElementById("output");
