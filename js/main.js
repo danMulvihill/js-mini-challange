@@ -42,6 +42,7 @@ var nameButton = document.getElementById('name-button')
 
 nameButton.addEventListener('click', function(e){
     e.preventDefault();
+    console.log(e.target);
     nameEntered = document.getElementById("nameIn").value;
     if (!nameEntered){
         alert("You didn't enter anything");
@@ -56,24 +57,13 @@ nameButton.addEventListener('click', function(e){
 //figure out how to get the color from the button id
 
 
-// function getPrize(color){
-//     var output = document.getElementById("output");
-//     if (color==="green"){
-//         output.innerHTML = "<h3>You win the Grand Prize: a new car!</h3>"
-//     }else if (color==="yellow"){
-//         output.innerHTML = "<h4>You win the consolation prize: a toaster.<h4>"
-//     }else{
-//         output.innerHTML ="<p>You win a bumper sticker with our company logo on it. Yay!</p>"
-//     }
-// }
-
-
-function getPrize(color){
-    var color = this.getAttribute("id"); // the THIS context is available here
+function getPrize(e){
+    //console.log(e.target);
+    //var color = this.getAttribute("id"); 
     var output = document.getElementById("output");
-    if (color==="green"){
+    if (e.target.id==="green"){
         output.innerHTML = "<h3>You win the Grand Prize: a new car!</h3>"
-    }else if (color==="yellow"){
+    }else if (e.target.id==="yellow"){
         output.innerHTML = "<h4>You win the consolation prize: a toaster.<h4>"
     }else{
         output.innerHTML ="<p>You win a bumper sticker with our company logo on it. Yay!</p>"
