@@ -56,7 +56,20 @@ nameButton.addEventListener('click', function(e){
 //figure out how to get the color from the button id
 
 
+// function getPrize(color){
+//     var output = document.getElementById("output");
+//     if (color==="green"){
+//         output.innerHTML = "<h3>You win the Grand Prize: a new car!</h3>"
+//     }else if (color==="yellow"){
+//         output.innerHTML = "<h4>You win the consolation prize: a toaster.<h4>"
+//     }else{
+//         output.innerHTML ="<p>You win a bumper sticker with our company logo on it. Yay!</p>"
+//     }
+// }
+
+
 function getPrize(color){
+    var color = this.getAttribute("id"); // the THIS context is available here
     var output = document.getElementById("output");
     if (color==="green"){
         output.innerHTML = "<h3>You win the Grand Prize: a new car!</h3>"
@@ -67,8 +80,10 @@ function getPrize(color){
     }
 }
 
-
-
+var doorsArr = document.getElementsByClassName("door");
+for (var i = 0; i < doorsArr.length; i++) {
+    doorsArr[i].addEventListener('click', getPrize);
+}
 
 
 
