@@ -67,3 +67,8 @@ button:hover{
     background-color: burlywood !important;
 }
 
+button:focus{
+    border: 0;
+    background-color: gray;
+}
+
